@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/elDrawlerLayout">
+
+<!-- El navigation drawer es divideix en dues parts,
+        - la primera indica el contingut principal de l'activity que inclourà el Nav. Drawer
+        - la segona per indicar quin serà el View que mostrarà les opcions del Navigation Drawer,
+          en este cas, hem decidir mostrar-les mitjançant un GridView.
+-->
+
+    <!-- 1a part. En este cas, ho organitzarem tot mitjaçant un Relative Layout -->
+    <RelativeLayout
+        android:id="@+id/elNavigationDrawerAntic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView android:text="@string/contingut_principal" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <!-- 2a part. Utilitzarem un GridView per a mostrar les opcions del Navigation Drawer -->
+    <GridView
+        android:id="@+id/grid_Opcions_Nav_Drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:scrollbars="vertical"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:background="#ffffff"
+        android:gravity="center"/>
+
+
+</android.support.v4.widget.DrawerLayout>

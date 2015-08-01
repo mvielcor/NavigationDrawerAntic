@@ -3,4 +3,6 @@
 
     <string name="contingut_principal">Ací va el contingut principal de l\'activity!</string>
     <string name="action_settings">Settings</string>
+    <string name="openDrawer">Obrint Drawer</string>
+    <string name="closeDrawer">Tancant Drawer</string>
 </resources>
